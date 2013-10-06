@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B88BD91801666A006CEE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BD81801666A006CEE57 /* Foundation.framework */; };
+		43B88BE71801666A006CEE57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BE61801666A006CEE57 /* XCTest.framework */; };
+		43B88BE81801666A006CEE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BD81801666A006CEE57 /* Foundation.framework */; };
+		43B88BEA1801666A006CEE57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BE91801666A006CEE57 /* UIKit.framework */; };
+		43B88BED1801666A006CEE57 /* libGBMetadataFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BD51801666A006CEE57 /* libGBMetadataFetcher.a */; };
+		43B88BF31801666A006CEE57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43B88BF11801666A006CEE57 /* InfoPlist.strings */; };
+		43B88BF51801666A006CEE57 /* GBMetadataFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88BF41801666A006CEE57 /* GBMetadataFetcherTests.m */; };
+		43B88C02180166C9006CEE57 /* GBMetadataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */; };
+		43B88C14180166D4006CEE57 /* GBTVDBFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */; };
+		43B88C15180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */; };
+		43B88C16180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */; };
+		43B88C17180166D4006CEE57 /* GBTVDBGetBannersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43B88BEB1801666A006CEE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B88BCD1801666A006CEE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B88BD41801666A006CEE57;
+			remoteInfo = GBMetadataFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43B88BD31801666A006CEE57 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43B88BD51801666A006CEE57 /* libGBMetadataFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBMetadataFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B88BD81801666A006CEE57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43B88BDC1801666A006CEE57 /* GBMetadataFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBMetadataFetcher-Prefix.pch"; sourceTree = "<group>"; };
+		43B88BE51801666A006CEE57 /* GBMetadataFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBMetadataFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B88BE61801666A006CEE57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43B88BE91801666A006CEE57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		43B88BF01801666A006CEE57 /* GBMetadataFetcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBMetadataFetcherTests-Info.plist"; sourceTree = "<group>"; };
+		43B88BF21801666A006CEE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43B88BF41801666A006CEE57 /* GBMetadataFetcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBMetadataFetcherTests.m; sourceTree = "<group>"; };
+		43B88BFE180166C9006CEE57 /* GBMetadataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMetadataFetcher.h; sourceTree = "<group>"; };
+		43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMetadataFetcher.m; sourceTree = "<group>"; };
+		43B88C00180166C9006CEE57 /* GBMetadataFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMetadataFetching.h; sourceTree = "<group>"; };
+		43B88C01180166C9006CEE57 /* GBMetadataTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMetadataTags.h; sourceTree = "<group>"; };
+		43B88C04180166D4006CEE57 /* GBTVDBFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFetcher.h; path = ../GBTVDBFetcher.h; sourceTree = "<group>"; };
+		43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFetcher.m; path = ../GBTVDBFetcher.m; sourceTree = "<group>"; };
+		43B88C06180166D4006CEE57 /* GBTVDBFindShowByIdParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByIdParser.h; path = ../GBTVDBFindShowByIdParser.h; sourceTree = "<group>"; };
+		43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByNameParser.m; path = ../GBTVDBFindShowByNameParser.m; sourceTree = "<group>"; };
+		43B88C08180166D4006CEE57 /* GBTVDBFindShowByNameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByNameParser.h; path = ../GBTVDBFindShowByNameParser.h; sourceTree = "<group>"; };
+		43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByNameParser.m; path = ../GBTVDBFindShowByNameParser.m; sourceTree = "<group>"; };
+		43B88C0A180166D4006CEE57 /* GBTVDBGetBannersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBGetBannersParser.h; path = ../GBTVDBGetBannersParser.h; sourceTree = "<group>"; };
+		43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBGetBannersParser.m; path = ../GBTVDBGetBannersParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B88BD21801666A006CEE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B88BD91801666A006CEE57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B88BE21801666A006CEE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B88BE71801666A006CEE57 /* XCTest.framework in Frameworks */,
+				43B88BEA1801666A006CEE57 /* UIKit.framework in Frameworks */,
+				43B88BE81801666A006CEE57 /* Foundation.framework in Frameworks */,
+				43B88BED1801666A006CEE57 /* libGBMetadataFetcher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B88BCC1801666A006CEE57 = {
+			isa = PBXGroup;
+			children = (
+				43B88BDA1801666A006CEE57 /* GBMetadataFetcher */,
+				43B88BEE1801666A006CEE57 /* GBMetadataFetcherTests */,
+				43B88BD71801666A006CEE57 /* Frameworks */,
+				43B88BD61801666A006CEE57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B88BD61801666A006CEE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BD51801666A006CEE57 /* libGBMetadataFetcher.a */,
+				43B88BE51801666A006CEE57 /* GBMetadataFetcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B88BD71801666A006CEE57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BD81801666A006CEE57 /* Foundation.framework */,
+				43B88BE61801666A006CEE57 /* XCTest.framework */,
+				43B88BE91801666A006CEE57 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43B88BDA1801666A006CEE57 /* GBMetadataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BFE180166C9006CEE57 /* GBMetadataFetcher.h */,
+				43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */,
+				43B88C00180166C9006CEE57 /* GBMetadataFetching.h */,
+				43B88C01180166C9006CEE57 /* GBMetadataTags.h */,
+				43B88C03180166D4006CEE57 /* TVDB */,
+				43B88BDB1801666A006CEE57 /* Supporting Files */,
+			);
+			path = GBMetadataFetcher;
+			sourceTree = "<group>";
+		};
+		43B88BDB1801666A006CEE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BDC1801666A006CEE57 /* GBMetadataFetcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B88BEE1801666A006CEE57 /* GBMetadataFetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BF41801666A006CEE57 /* GBMetadataFetcherTests.m */,
+				43B88BEF1801666A006CEE57 /* Supporting Files */,
+			);
+			path = GBMetadataFetcherTests;
+			sourceTree = "<group>";
+		};
+		43B88BEF1801666A006CEE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43B88BF01801666A006CEE57 /* GBMetadataFetcherTests-Info.plist */,
+				43B88BF11801666A006CEE57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B88C03180166D4006CEE57 /* TVDB */ = {
+			isa = PBXGroup;
+			children = (
+				43B88C04180166D4006CEE57 /* GBTVDBFetcher.h */,
+				43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */,
+				43B88C06180166D4006CEE57 /* GBTVDBFindShowByIdParser.h */,
+				43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */,
+				43B88C08180166D4006CEE57 /* GBTVDBFindShowByNameParser.h */,
+				43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */,
+				43B88C0A180166D4006CEE57 /* GBTVDBGetBannersParser.h */,
+				43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */,
+			);
+			path = TVDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B88BD41801666A006CEE57 /* GBMetadataFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B88BF81801666A006CEE57 /* Build configuration list for PBXNativeTarget "GBMetadataFetcher" */;
+			buildPhases = (
+				43B88BD11801666A006CEE57 /* Sources */,
+				43B88BD21801666A006CEE57 /* Frameworks */,
+				43B88BD31801666A006CEE57 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBMetadataFetcher;
+			productName = GBMetadataFetcher;
+			productReference = 43B88BD51801666A006CEE57 /* libGBMetadataFetcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		43B88BE41801666A006CEE57 /* GBMetadataFetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B88BFB1801666A006CEE57 /* Build configuration list for PBXNativeTarget "GBMetadataFetcherTests" */;
+			buildPhases = (
+				43B88BE11801666A006CEE57 /* Sources */,
+				43B88BE21801666A006CEE57 /* Frameworks */,
+				43B88BE31801666A006CEE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B88BEC1801666A006CEE57 /* PBXTargetDependency */,
+			);
+			name = GBMetadataFetcherTests;
+			productName = GBMetadataFetcherTests;
+			productReference = 43B88BE51801666A006CEE57 /* GBMetadataFetcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B88BCD1801666A006CEE57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Gerardo Blanco García";
+			};
+			buildConfigurationList = 43B88BD01801666A006CEE57 /* Build configuration list for PBXProject "GBMetadataFetcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43B88BCC1801666A006CEE57;
+			productRefGroup = 43B88BD61801666A006CEE57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B88BD41801666A006CEE57 /* GBMetadataFetcher */,
+				43B88BE41801666A006CEE57 /* GBMetadataFetcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B88BE31801666A006CEE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B88BF31801666A006CEE57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B88BD11801666A006CEE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B88C17180166D4006CEE57 /* GBTVDBGetBannersParser.m in Sources */,
+				43B88C15180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */,
+				43B88C14180166D4006CEE57 /* GBTVDBFetcher.m in Sources */,
+				43B88C02180166C9006CEE57 /* GBMetadataFetcher.m in Sources */,
+				43B88C16180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B88BE11801666A006CEE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B88BF51801666A006CEE57 /* GBMetadataFetcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43B88BEC1801666A006CEE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B88BD41801666A006CEE57 /* GBMetadataFetcher */;
+			targetProxy = 43B88BEB1801666A006CEE57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43B88BF11801666A006CEE57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B88BF21801666A006CEE57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43B88BF61801666A006CEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43B88BF71801666A006CEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B88BF91801666A006CEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GBMetadataFetcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43B88BFA1801666A006CEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GBMetadataFetcher.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43B88BFC1801666A006CEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GBMetadataFetcherTests/GBMetadataFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43B88BFD1801666A006CEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
+				INFOPLIST_FILE = "GBMetadataFetcherTests/GBMetadataFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B88BD01801666A006CEE57 /* Build configuration list for PBXProject "GBMetadataFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B88BF61801666A006CEE57 /* Debug */,
+				43B88BF71801666A006CEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B88BF81801666A006CEE57 /* Build configuration list for PBXNativeTarget "GBMetadataFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B88BF91801666A006CEE57 /* Debug */,
+				43B88BFA1801666A006CEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43B88BFB1801666A006CEE57 /* Build configuration list for PBXNativeTarget "GBMetadataFetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B88BFC1801666A006CEE57 /* Debug */,
+				43B88BFD1801666A006CEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B88BCD1801666A006CEE57 /* Project object */;
+}
