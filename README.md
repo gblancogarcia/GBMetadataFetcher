@@ -71,13 +71,13 @@ Below is an example of getting such information.
 NSArray *shows = [metadataFetcher findShowByName:@"Medium" inLanguage:@"en"];
 ```
 
-To retrieve the detailed information of the series, the `showId` from the previous API call is needed. 
+To retrieve the detailed information of the series, the `showId` from the previous API call is needed:
 
 ```objective-c
 - (NSDictionary *)findShowById:(NSString *)showId inLanguage:(NSString *)language;
 ```
 
-It will return an array of NSDictionary objects containing the following possible keys: 
+This method returns an array of NSDictionary objects containing the following possible keys: 
 
 - `airDay`
 - `airTime`
