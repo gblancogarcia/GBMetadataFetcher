@@ -1,7 +1,7 @@
 GBMetadataFetcher
 =================
 
-GBMetadataFetcher library provides 
+GBMetadataFetcher library provides an API to retrieve TV Series metadata from Internet sources.
 
 ## Requirements
 
@@ -9,7 +9,7 @@ GBMetadataFetcher works on iOS 7 SDK or later and is compatible with ARC project
 
 ## Adding GBMetadataFetcher to your project
 
-## Source files
+### Source files
 
 1. Drag the *.h and *.m files from this repository into your project.
 2. `#import "GBMetadataFetcher.h"`
@@ -41,7 +41,7 @@ You can get a new brand instance this way:
 id <GBMetadataFetching> metadataFetcher = [GBMetadataFetcher metadataFetcherWithType:TVDB];
 ```
 
-To start using GBMetadataFetcher with TVDB type you'll first need an API key from the TVDB website. An API key can be retrieved by registering for one on the TVDB website. Once you have an API key, you'll need to initialize the TVDbClient by setting it as the following:
+To start using a TVDB type instance, you'll first need an API key from the TVDB website. An API key can be retrieved by registering for one on the TVDB website. Once you have an API key, you'll need to initialize the `GBMetadataFetcher` by setting it as the following:
 
 ```objective-c
 if ([metadataFetcher respondsToSelector:@selector(setApiKey:)]) {
@@ -56,6 +56,7 @@ Now you can find the id and other information of a series based on its name whit
 ```
 
 It will return an array of NSDictionary objects containing the following possible keys: 
+
 - `imdbId`
 - `language`
 - `premiereDate`
@@ -64,6 +65,52 @@ It will return an array of NSDictionary objects containing the following possibl
 - `title`
 - `tvdbId`
 - `year`
+
+Below is an example of getting such information.
+```objective-c
+NSArray *shows = [metadataFetcher findShowByName:@"Medium" inLanguage:@"en"];
+```
+
+To retrieve the detailed information of the series, the `showId` from the previous API call is needed. 
+
+```objective-c
+- (NSDictionary *)findShowById:(NSString *)showId inLanguage:(NSString *)language;
+```
+
+It will return an array of NSDictionary objects containing the following possible keys: 
+
+- `airDay`
+- `airTime`
+- `contentRating`
+- `coverURL`
+- `episodes`
+- `genre`
+- `imdbId`
+- `language`
+- `network`
+- `premiereDate`
+- `rating`
+- `runtime`
+- `title`
+- `tvdbId`
+- `showId`
+- `status`
+- `summary`
+- `year`
+
+The value of 'episodes' key is also an array of NSDictionary objects containing the following possible keys:
+
+- `bannerURL`
+- `episodeNumber`
+- `episodeId`
+- `imdbId`
+- `language`
+- `premiereDate`
+- `rating`
+- `seasonNumber`
+- `summary`
+- `title`
+- `tvdbId`
 
 [...]
 
