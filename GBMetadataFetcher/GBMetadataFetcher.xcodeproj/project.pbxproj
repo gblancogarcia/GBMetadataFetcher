@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4313662418098E0300A54D40 /* GBTVDBFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4313661D18098E0300A54D40 /* GBTVDBFetcher.m */; };
+		4313662518098E0300A54D40 /* GBTVDBFindShowByIdParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4313661F18098E0300A54D40 /* GBTVDBFindShowByIdParser.m */; };
+		4313662618098E0300A54D40 /* GBTVDBFindShowByNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4313662118098E0300A54D40 /* GBTVDBFindShowByNameParser.m */; };
+		4313662718098E0300A54D40 /* GBTVDBGetBannersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4313662318098E0300A54D40 /* GBTVDBGetBannersParser.m */; };
+		4313666918098F0100A54D40 /* GBMetadataFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43B88BFE180166C9006CEE57 /* GBMetadataFetcher.h */; };
+		4313666A18098F0100A54D40 /* GBMetadataFetcher.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */; };
+		4313666B18098F0100A54D40 /* GBMetadataFetching.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43B88C00180166C9006CEE57 /* GBMetadataFetching.h */; };
+		4313666C18098F0100A54D40 /* GBMetadataTags.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43B88C01180166C9006CEE57 /* GBMetadataTags.h */; };
 		43B88BD91801666A006CEE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BD81801666A006CEE57 /* Foundation.framework */; };
 		43B88BE71801666A006CEE57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BE61801666A006CEE57 /* XCTest.framework */; };
 		43B88BE81801666A006CEE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B88BD81801666A006CEE57 /* Foundation.framework */; };
@@ -15,10 +23,6 @@
 		43B88BF31801666A006CEE57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43B88BF11801666A006CEE57 /* InfoPlist.strings */; };
 		43B88BF51801666A006CEE57 /* GBMetadataFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88BF41801666A006CEE57 /* GBMetadataFetcherTests.m */; };
 		43B88C02180166C9006CEE57 /* GBMetadataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */; };
-		43B88C14180166D4006CEE57 /* GBTVDBFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */; };
-		43B88C15180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */; };
-		43B88C16180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */; };
-		43B88C17180166D4006CEE57 /* GBTVDBGetBannersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +42,24 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				4313666918098F0100A54D40 /* GBMetadataFetcher.h in CopyFiles */,
+				4313666A18098F0100A54D40 /* GBMetadataFetcher.m in CopyFiles */,
+				4313666B18098F0100A54D40 /* GBMetadataFetching.h in CopyFiles */,
+				4313666C18098F0100A54D40 /* GBMetadataTags.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4313661C18098E0300A54D40 /* GBTVDBFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFetcher.h; path = GBMetadataFetcher/GBTVDBFetcher.h; sourceTree = SOURCE_ROOT; };
+		4313661D18098E0300A54D40 /* GBTVDBFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFetcher.m; path = GBMetadataFetcher/GBTVDBFetcher.m; sourceTree = SOURCE_ROOT; };
+		4313661E18098E0300A54D40 /* GBTVDBFindShowByIdParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByIdParser.h; path = GBMetadataFetcher/GBTVDBFindShowByIdParser.h; sourceTree = SOURCE_ROOT; };
+		4313661F18098E0300A54D40 /* GBTVDBFindShowByIdParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByIdParser.m; path = GBMetadataFetcher/GBTVDBFindShowByIdParser.m; sourceTree = SOURCE_ROOT; };
+		4313662018098E0300A54D40 /* GBTVDBFindShowByNameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByNameParser.h; path = GBMetadataFetcher/GBTVDBFindShowByNameParser.h; sourceTree = SOURCE_ROOT; };
+		4313662118098E0300A54D40 /* GBTVDBFindShowByNameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByNameParser.m; path = GBMetadataFetcher/GBTVDBFindShowByNameParser.m; sourceTree = SOURCE_ROOT; };
+		4313662218098E0300A54D40 /* GBTVDBGetBannersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBGetBannersParser.h; path = GBMetadataFetcher/GBTVDBGetBannersParser.h; sourceTree = SOURCE_ROOT; };
+		4313662318098E0300A54D40 /* GBTVDBGetBannersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBGetBannersParser.m; path = GBMetadataFetcher/GBTVDBGetBannersParser.m; sourceTree = SOURCE_ROOT; };
 		43B88BD51801666A006CEE57 /* libGBMetadataFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBMetadataFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B88BD81801666A006CEE57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43B88BDC1801666A006CEE57 /* GBMetadataFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBMetadataFetcher-Prefix.pch"; sourceTree = "<group>"; };
@@ -57,14 +73,6 @@
 		43B88BFF180166C9006CEE57 /* GBMetadataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMetadataFetcher.m; sourceTree = "<group>"; };
 		43B88C00180166C9006CEE57 /* GBMetadataFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMetadataFetching.h; sourceTree = "<group>"; };
 		43B88C01180166C9006CEE57 /* GBMetadataTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMetadataTags.h; sourceTree = "<group>"; };
-		43B88C04180166D4006CEE57 /* GBTVDBFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFetcher.h; path = ../GBTVDBFetcher.h; sourceTree = "<group>"; };
-		43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFetcher.m; path = ../GBTVDBFetcher.m; sourceTree = "<group>"; };
-		43B88C06180166D4006CEE57 /* GBTVDBFindShowByIdParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByIdParser.h; path = ../GBTVDBFindShowByIdParser.h; sourceTree = "<group>"; };
-		43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByNameParser.m; path = ../GBTVDBFindShowByNameParser.m; sourceTree = "<group>"; };
-		43B88C08180166D4006CEE57 /* GBTVDBFindShowByNameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBFindShowByNameParser.h; path = ../GBTVDBFindShowByNameParser.h; sourceTree = "<group>"; };
-		43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBFindShowByNameParser.m; path = ../GBTVDBFindShowByNameParser.m; sourceTree = "<group>"; };
-		43B88C0A180166D4006CEE57 /* GBTVDBGetBannersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTVDBGetBannersParser.h; path = ../GBTVDBGetBannersParser.h; sourceTree = "<group>"; };
-		43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTVDBGetBannersParser.m; path = ../GBTVDBGetBannersParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,14 +169,14 @@
 		43B88C03180166D4006CEE57 /* TVDB */ = {
 			isa = PBXGroup;
 			children = (
-				43B88C04180166D4006CEE57 /* GBTVDBFetcher.h */,
-				43B88C05180166D4006CEE57 /* GBTVDBFetcher.m */,
-				43B88C06180166D4006CEE57 /* GBTVDBFindShowByIdParser.h */,
-				43B88C07180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */,
-				43B88C08180166D4006CEE57 /* GBTVDBFindShowByNameParser.h */,
-				43B88C09180166D4006CEE57 /* GBTVDBFindShowByNameParser.m */,
-				43B88C0A180166D4006CEE57 /* GBTVDBGetBannersParser.h */,
-				43B88C0B180166D4006CEE57 /* GBTVDBGetBannersParser.m */,
+				4313661C18098E0300A54D40 /* GBTVDBFetcher.h */,
+				4313661D18098E0300A54D40 /* GBTVDBFetcher.m */,
+				4313661E18098E0300A54D40 /* GBTVDBFindShowByIdParser.h */,
+				4313661F18098E0300A54D40 /* GBTVDBFindShowByIdParser.m */,
+				4313662018098E0300A54D40 /* GBTVDBFindShowByNameParser.h */,
+				4313662118098E0300A54D40 /* GBTVDBFindShowByNameParser.m */,
+				4313662218098E0300A54D40 /* GBTVDBGetBannersParser.h */,
+				4313662318098E0300A54D40 /* GBTVDBGetBannersParser.m */,
 			);
 			path = TVDB;
 			sourceTree = "<group>";
@@ -254,11 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B88C17180166D4006CEE57 /* GBTVDBGetBannersParser.m in Sources */,
-				43B88C15180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */,
-				43B88C14180166D4006CEE57 /* GBTVDBFetcher.m in Sources */,
+				4313662718098E0300A54D40 /* GBTVDBGetBannersParser.m in Sources */,
+				4313662518098E0300A54D40 /* GBTVDBFindShowByIdParser.m in Sources */,
+				4313662418098E0300A54D40 /* GBTVDBFetcher.m in Sources */,
 				43B88C02180166C9006CEE57 /* GBMetadataFetcher.m in Sources */,
-				43B88C16180166D4006CEE57 /* GBTVDBFindShowByNameParser.m in Sources */,
+				4313662618098E0300A54D40 /* GBTVDBFindShowByNameParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +378,7 @@
 				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -382,6 +391,7 @@
 				GCC_PREFIX_HEADER = "GBMetadataFetcher/GBMetadataFetcher-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -443,6 +453,7 @@
 				43B88BFA1801666A006CEE57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43B88BFB1801666A006CEE57 /* Build configuration list for PBXNativeTarget "GBMetadataFetcherTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +462,7 @@
 				43B88BFD1801666A006CEE57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
