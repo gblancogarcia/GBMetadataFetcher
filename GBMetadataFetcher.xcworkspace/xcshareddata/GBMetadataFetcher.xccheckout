@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D67AB7A0-BF94-4860-93C1-4585EE125F37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GBMetadataFetcher</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FA3CD9A2-2CA3-42B4-8555-6F727BE43DD4</key>
+		<string>https://github.com/gblancogarcia/GBMetadataFetcher.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GBMetadataFetcher.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FA3CD9A2-2CA3-42B4-8555-6F727BE43DD4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gblancogarcia/GBMetadataFetcher.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FA3CD9A2-2CA3-42B4-8555-6F727BE43DD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA3CD9A2-2CA3-42B4-8555-6F727BE43DD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GBMetadataFetcher</string>
+		</dict>
+	</array>
+</dict>
+</plist>
