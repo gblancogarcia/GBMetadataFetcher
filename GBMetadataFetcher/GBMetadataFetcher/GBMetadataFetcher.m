@@ -24,7 +24,6 @@
         case TVDB:
             metadataFetcher = [[GBTVDBFetcher alloc] init];
             break;
-
         default:
             metadataFetcher = [[GBTVDBFetcher alloc] init];
             break;

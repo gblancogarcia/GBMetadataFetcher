@@ -76,7 +76,6 @@
     array = [GBTVDBGetBannersParser arrayForXMLData:data inLanguage:language error:&error];
     
     return array;
-    
 }
 
 - (NSData *)requestURL:(NSURL *)url

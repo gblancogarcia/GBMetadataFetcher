@@ -63,11 +63,9 @@
 {
     if ([[elementName lowercaseString] isEqualToString:TVDB_BANNERS]) {
         self.banners = [[NSMutableArray alloc] init];
-        
     } if ([[elementName lowercaseString] isEqualToString:TVDB_BANNER]) {
         self.parsingBanner = YES;
         self.currentBanner = [[NSMutableDictionary alloc] init];
-        
     } if ([[elementName lowercaseString] isEqualToString:TVDB_BANNER_PATH] ||
           [[elementName lowercaseString] isEqualToString:TVDB_BANNER_TYPE] ||
           [[elementName lowercaseString] isEqualToString:TVDB_IDENTIFICATOR] ||
@@ -98,13 +96,10 @@
                 NSURL *url = [NSURL URLWithString:[TVDB_BANNERS_URI stringByAppendingPathComponent:[self.currentString copy]]];
                 (self.currentBanner)[BANNER_URL] = url;
             }
-            
         } else if ([[elementName lowercaseString] isEqualToString:TVDB_BANNER_TYPE]) {
             (self.currentBanner)[TYPE] = [self.currentString copy];
-
         } else if ([[elementName lowercaseString] isEqualToString:TVDB_IDENTIFICATOR]) {
             (self.currentBanner)[IDENTIFICATOR] = [self.currentString copy];
-            
         } else if ([[elementName lowercaseString] isEqualToString:TVDB_LANGUAGE]) {
             (self.currentBanner)[LANGUAGE] = [self.currentString copy];
         }

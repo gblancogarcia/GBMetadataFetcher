@@ -58,10 +58,8 @@
 {
     if ([[elementName lowercaseString] isEqualToString:TVDB_DATA]) {
         self.shows = [[NSMutableArray alloc] init];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_SERIES]) {
         self.currentShow = [[NSMutableDictionary alloc] init];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_FIRST_AIRED] ||
                [[elementName lowercaseString] isEqualToString:TVDB_IDENTIFICATOR] ||
                [[elementName lowercaseString] isEqualToString:TVDB_IMDB_ID] ||
@@ -78,7 +76,6 @@
 {
     if ([[elementName lowercaseString] isEqualToString:TVDB_SERIES]) {
         [self.shows addObject:[self.currentShow copy]];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_FIRST_AIRED]) {
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"yyyy-MM-dd"];
@@ -95,20 +92,15 @@
             
             (self.currentShow)[YEAR] = year;
         }
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_IDENTIFICATOR]) {
         (self.currentShow)[SHOW_ID] = [self.currentString copy];
         (self.currentShow)[TVDB_ID] = [self.currentString copy];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_IMDB_ID]) {
         (self.currentShow)[IMDB_ID] = [self.currentString copy];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_LANGUAGE]) {
         (self.currentShow)[LANGUAGE] = [self.currentString copy];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_OVERVIEW]) {
         (self.currentShow)[SUMMARY] = [self.currentString copy];
-        
     } else if ([[elementName lowercaseString] isEqualToString:TVDB_SERIES_NAME]) {
         (self.currentShow)[TITLE] = [self.currentString copy];
     }
